@@ -4,7 +4,9 @@ class Persona{
 
     constructor(nombre, edad){
         this.#nombre = nombre;
-        this.#edad = edad; 
+        this.#edad = edad;
+        this.#metodoPrivado(); 
+        
     }
 
     set setNombre(nombre){
@@ -19,6 +21,13 @@ class Persona{
     }
     get getEdad(){
         return this.#edad;
+    }
+
+    #metodoPrivado(){
+        console.log('Metodo privado');
+    }
+    metodoPublico(){
+        console.log('Metodo publico');
     }
 }
 
