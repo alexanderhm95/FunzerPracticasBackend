@@ -1,7 +1,7 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
     module.exports = {
         mode: 'development',
-        ourput:{
+        output:{
             clean: true
         },
         module:{
@@ -19,4 +19,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
             new HtmlWebpackPlugin({
                 template: './src/index.html',
                 title: 'Mi Webpack App',
-                filename
+                filename: './index.html'
+
+            })
+        ]
+    
+
+}
